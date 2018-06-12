@@ -1,16 +1,31 @@
 body {
   background-color: rgb(255, 255, 255);
+  line-height: 1em;
 }
 
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
+  font-size: 3em;
   color: grey;
+  margin-top: 0.67em;
+  margin-bottom: .67em;
 }
 
 body {
+
   color: grey;
-  max-width: 500px;
+  max-width: 50%;
   margin: auto;
+}
+li {list-style-type: disc;
+}
+
+img {
+  float: left;
+  height: 10em;
+  background: #555;
+  margin-top: 0.4em;
+  margin-bottom: .4em;
+  margin-right: .67em;
 }
 
