@@ -21,6 +21,7 @@ if(spouse === 'yes' || spouse === 'y' ) {
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
 }
+console.log('Does Sharon have a spouse? ' + spouse);
 
 //question 2 kids
 var kids = prompt('Does Sharon have kids?');
@@ -32,6 +33,7 @@ if(kids === 'yes' || kids === 'y' ) {
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
 }
+console.log('Does Sharon have kids? ' + kids);
 
 //question 3 pet
 var pet = prompt('Does Sharon have a pet?');
@@ -44,6 +46,8 @@ if(pet === 'yes' || pet === 'y' ) {
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
 }
+console.log('Does Sharon have a pet? ' + pet);
+
 
 //question 4 job
 var job = prompt('Does Sharon have a job?');
@@ -56,6 +60,7 @@ if(job === 'yes' || job === 'y' ) {
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
 }
+console.log('Does Sharon have a job? ' + job);
 
 //question 5 hobby
 var hobby = prompt('Does Sharon have a hobby?');
@@ -68,4 +73,5 @@ if(hobby === 'yes' || hobby === 'y' ) {
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
 }
+console.log('Does Sharon have a hobby? ' + hobby);
 //* to.LowerCase();
