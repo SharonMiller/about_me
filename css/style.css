@@ -14,7 +14,7 @@ h1 {
 body {
 
   color: grey;
-  max-width: 50%;
+  max-width: 48%;
   margin: auto;
 }
 li {list-style-type: disc;
@@ -22,10 +22,10 @@ li {list-style-type: disc;
 
 img {
   float: left;
-  height: 10em;
+  height: 9em;
   background: #555;
-  margin-top: 0.4em;
-  margin-bottom: .4em;
+  margin-top: 0.3em;
+  margin-bottom: .5em;
   margin-right: .67em;
 }
 
