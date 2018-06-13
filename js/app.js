@@ -37,12 +37,12 @@ console.log('Does Sharon have kids? ' + kids);
 
 //question 3 pet
 var pet = prompt('Does Sharon have a pet?');
-pet = kids.toLowerCase();
+pet = pet.toLowerCase();
 
-if(pet === 'yes' || pet === 'y' ) {
+if(pet === 'yes' || pet === 'y') {
   alert('Your right, ' + userName + ' she has a Pit-Boston Mix named Piper!');
 } else if(pet === 'no' || pet === 'n') {
-  alert('Actually, Sharon has a Pit- Boston-Mix named Piper.');
+  alert('Actually, Sharon has a Pit- Boston Mix named Piper.');
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
 }
@@ -68,7 +68,7 @@ hobby = hobby.toLowerCase();
 
 if(hobby === 'yes' || hobby === 'y' ) {
   alert('uhhh, sorry!   ' + userName + ', Sharon has a spouse, a job, a pet and three kids... when would she have time for a hobby???');
-} else if (hobby === 'no' || hobby === 'yes') {
+} else if (hobby === 'no' || hobby === 'n') {
   alert('yep- you guessed that one right, who has time for a hobby with a spouse, a job, a pet and three kids! ');
 } else {
   alert ('come on ' + userName + ', these are yes or no answers, try again');
