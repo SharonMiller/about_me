@@ -79,7 +79,7 @@ questionFour();
 function questionFive(){
   var hobby = prompt('Does Sharon have a hobby?');
   hobby = hobby.toLowerCase();
-  
+
   if(hobby === 'yes' || hobby === 'y' ) {
     alert('uhhh, sorry!   ' + userName + ', Sharon has a spouse, a job, a pet and three kids... when would she have time for a hobby???');
   } else if (hobby === 'no' || hobby === 'n') {
@@ -93,49 +93,61 @@ function questionFive(){
 questionFive();
 
 // guess the number question- how many times have i moved? answer 32
-// var moveGuess = prompt('how many times have I moved');
-// var numGuess;
+function questionSix(){
+  var moveGuess = prompt('how many times have I moved');
+  var numGuess;
+  
+  for (numGuess = 0; numGuess < 3; numGuess++ ) {
+    console.log(numGuess + ' my counting guess - top of for loop');
+    console.log(moveGuess + ' I input this - top of for loop');
+    if (moveGuess > 32) {
+      alert('Oops, that is too high'); //guess too high
+      moveGuess = prompt('try again');// tell user to try again
+    } else if (moveGuess < 32) {// guess too low
+      alert('Oops, that is too low');
+      moveGuess = prompt ('try again'); //tell user try again
+    } else if (moveGuess == 32) {//guess it right
+      alert('Nice job, you guessed it');//tell user correct
+      break;
+    }
+    if (numGuess === 2 ) {
+      alert('You are all out of guesses, I have moved 32 times.');//user is all out of guesses
+    }
+  }
+};
 
-// for (numGuess = 0; numGuess < 3; numGuess++ ) {
-//   console.log(numGuess + ' my counting guess - top of for loop');
-//   console.log(moveGuess + ' I input this - top of for loop');
-//   if (moveGuess > 32) {
-//     alert('Oops, that is too high'); //guess too high
-//     moveGuess = prompt('try again');// tell user to try again
-//   } else if (moveGuess < 32) {// guess too low
-//     alert('Oops, that is too low');
-//     moveGuess = prompt ('try again'); //tell user try again
-//   } else if (moveGuess == 32) {//guess it right
-//     alert('Nice job, you guessed it');//tell user correct
-//     break;
-//   }
-//   if (numGuess === 2 ) {
-//     alert('You are all out of guesses, I have moved 32 times.');//user is all out of guesses
-//   }
-// }
-
-// // 7th question- multiple possible correct answers that are stored in an array. ie can you guess a state that I have lived in besids washington. the user has 6 tries to get a single correct answer and uon those tries or getting the correct answer displays a message to the user indicating all of the possible correct answers
+questionSix();
 
 
-// var correctAnswer = false;
-// alert('Can you guess a state in which I have lived?');
-// var statesLivedIn = ['washington', 'oregon', 'nebraska', 'california']; //states array
-// var statesGuessed = 0;
-// var states;
-// states = prompt('Please guess a state I have lived in'); //which state question
+// 7th question- multiple possible correct answers that are stored in an array. ie can you guess a state that I have lived in besids washington. the user has 6 tries to get a single correct answer and uon those tries or getting the correct answer displays a message to the user indicating all of the possible correct answers
 
-// for (statesGuessed = 0; statesGuessed < 5; statesGuessed++ ){
-//   for (var i = 0; i < statesLivedIn.length; i++ ){
-//     if (states === statesLivedIn[i]) {
-//       alert ('That is correct! I have lived in ' + statesLivedIn ); //valid answer with states listed
-//       correctAnswer = true;
-//       break;
-//     } else {
-//       correctAnswer = false;
-//     }
-//     if (correctAnswer === true) {
-//       break;
-//     } else
-//       alert ('sorry you are all out of guesses, the correct answers ' + statesLivedIn );
-//   }
-// }//we need to add in a way to count how many guesses
+function questionSeven (){
+  var correctAnswer = false;
+  alert('Can you guess a state in which I have lived?');
+  var statesLivedIn = ['washington', 'oregon', 'nebraska', 'california']; //states array
+  var statesGuessed = 0;
+  var states;
+  
+  for (statesGuessed = 0; statesGuessed < 5; statesGuessed++ ){
+    states = prompt('Please guess a state I have lived in'); //which state question
+    for (var i = 0; i < statesLivedIn.length; i++ ){
+      if (states === statesLivedIn[i]) {
+        alert ('That is correct! I have lived in ' + statesLivedIn ); //valid answer with states listed
+        correctAnswer = true;
+        break;
+      }
+    }
+    if (correctAnswer === true){
+      break;
+    } else if (statesGuessed !== 4) {
+      alert ('try again, you have ' + (4 - statesGuessed) + ' guesses remaining');
+    }
+  }
+  
+  //we need to add in a way to count how many guesses
+  if (correctAnswer === false){
+    alert ('sorry you are all out of guesses, the correct answers ' + statesLivedIn );
+  };
+};
+
+questionSeven();
