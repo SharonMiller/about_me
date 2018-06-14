@@ -42,19 +42,22 @@ function questionTwo(){
 
 questionTwo();
 
-// //question 3 pet
-// var pet = prompt('Does Sharon have a pet?');
-// pet = pet.toLowerCase();
+//question 3 pet
+function questionThree (){
+  var pet = prompt('Does Sharon have a pet?');
+  pet = pet.toLowerCase();
+  
+  if(pet === 'yes' || pet === 'y') {
+    alert('Your right, ' + userName + ' she has a Pit-Boston Mix named Piper!');
+  } else if(pet === 'no' || pet === 'n') {
+    alert('Actually, Sharon has a Pit- Boston Mix named Piper.');
+  } else {
+    alert ('come on ' + userName + ', these are yes or no answers, try again');
+  }
+  console.log('Does Sharon have a pet? ' + pet);
+}; 
 
-// if(pet === 'yes' || pet === 'y') {
-//   alert('Your right, ' + userName + ' she has a Pit-Boston Mix named Piper!');
-// } else if(pet === 'no' || pet === 'n') {
-//   alert('Actually, Sharon has a Pit- Boston Mix named Piper.');
-// } else {
-//   alert ('come on ' + userName + ', these are yes or no answers, try again');
-// }
-// console.log('Does Sharon have a pet? ' + pet);
-
+questionThree();
 
 // //question 4 job
 // var job = prompt('Does Sharon have a job?');
