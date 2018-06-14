@@ -111,8 +111,12 @@ for (statesGuessed = 0; statesGuessed < 5; statesGuessed++ ){
       alert ('That is correct! I have lived in ' + statesLivedIn ); //valid answer with states listed
       correctAnswer = true;
       break;
+    } else {
+      correctAnswer = false;
     }
+    if (correctAnswer === true) {
+      break;
+    } else
+      alert ('sorry you are all out of guesses, the correct answers ' + statesLivedIn );
   }
-  if (correctAnswer === true) {
-    break;}
-}
+}//we need to add in a way to count how many guesses
