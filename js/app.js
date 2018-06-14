@@ -24,8 +24,6 @@ function questionOne (){
   console.log('Does Sharon have a spouse? ' + spouse);
 };
 
-questionOne();
-
 //question 2 kids
 function questionTwo(){
   var kids = prompt('Does Sharon have kids?');
@@ -38,9 +36,7 @@ function questionTwo(){
     alert ('come on ' + userName + ', these are yes or no answers, try again');
   }
   console.log('Does Sharon have kids? ' + kids);
-};
-
-questionTwo();
+}    
 
 //question 3 pet
 function questionThree (){
@@ -55,9 +51,7 @@ function questionThree (){
     alert ('come on ' + userName + ', these are yes or no answers, try again');
   }
   console.log('Does Sharon have a pet? ' + pet);
-}; 
-
-questionThree();
+} 
 
 //question 4 job
 function questionFour(){
@@ -74,7 +68,6 @@ function questionFour(){
   console.log('Does Sharon have a job? ' + job);
 };
 
-questionFour();
 //question 5 hobby
 function questionFive(){
   var hobby = prompt('Does Sharon have a hobby?');
@@ -89,8 +82,6 @@ function questionFive(){
   }
   console.log('Does Sharon have a hobby? ' + hobby);
 };
-
-questionFive();
 
 // guess the number question- how many times have i moved? answer 32
 function questionSix(){
@@ -115,9 +106,6 @@ function questionSix(){
     }
   }
 };
-
-questionSix();
-
 
 // 7th question- multiple possible correct answers that are stored in an array. ie can you guess a state that I have lived in besids washington. the user has 6 tries to get a single correct answer and uon those tries or getting the correct answer displays a message to the user indicating all of the possible correct answers
 
@@ -150,4 +138,14 @@ function questionSeven (){
   };
 };
 
-questionSeven();
+function allQuestions(){
+  questionOne();
+  questionTwo();
+  questionThree();
+  questionFour();
+  questionFive();
+  questionSix();
+  questionSeven();
+};
+
+allQuestions();
