@@ -26,17 +26,21 @@ function questionOne (){
 
 questionOne();
 
-// //question 2 kids
-// var kids = prompt('Does Sharon have kids?');
-// kids = kids.toLowerCase();
-// if(kids === 'yes' || kids === 'y' ) {
-//   alert('Yep, ' + userName + ' you got it, she has three kids: Gabe, Zach and Ava-Brooklyn!');
-// } else if (kids === 'no' || kids === 'n' ){
-//   alert('She has three kids, Gabe, Zach and Ava-Brooklyn.');
-// } else {
-//   alert ('come on ' + userName + ', these are yes or no answers, try again');
-// }
-// console.log('Does Sharon have kids? ' + kids);
+//question 2 kids
+function questionTwo(){
+  var kids = prompt('Does Sharon have kids?');
+  kids = kids.toLowerCase();
+  if(kids === 'yes' || kids === 'y' ) {
+    alert('Yep, ' + userName + ' you got it, she has three kids: Gabe, Zach and Ava-Brooklyn!');
+  } else if (kids === 'no' || kids === 'n' ){
+    alert('She has three kids, Gabe, Zach and Ava-Brooklyn.');
+  } else {
+    alert ('come on ' + userName + ', these are yes or no answers, try again');
+  }
+  console.log('Does Sharon have kids? ' + kids);
+};
+
+questionTwo();
 
 // //question 3 pet
 // var pet = prompt('Does Sharon have a pet?');
