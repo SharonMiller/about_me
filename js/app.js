@@ -12,6 +12,7 @@ Does Sharon have a job?
 Does Sharon have a hobby?  */
 
 // question 1 spouse
+
 function questionOne (){
   var husbandBool = true;
   do{
@@ -19,6 +20,7 @@ function questionOne (){
     if(spouse === 'yes' || spouse === 'y' ) {
       alert('Yep, ' + userName + ' she is married to Steve Miller!');
       husbandBool = false;
+      guessCounter = (guessCounter + 1);
     } else if (spouse === 'no' || spouse === 'n'){
       alert('Sorry, she\'s taken.');
       husbandBool = false;
@@ -36,6 +38,7 @@ function questionTwo(){
   kids = kids.toLowerCase();
   if(kids === 'yes' || kids === 'y' ) {
     alert('Yep, ' + userName + ' you got it, she has three kids: Gabe, Zach and Ava-Brooklyn!');
+    guessCounter ++;    
   } else if (kids === 'no' || kids === 'n' ){
     alert('She has three kids, Gabe, Zach and Ava-Brooklyn.');
   } else {
@@ -51,6 +54,7 @@ function questionThree (){
   
   if(pet === 'yes' || pet === 'y') {
     alert('Your right, ' + userName + ' she has a Pit-Boston Mix named Piper!');
+    guessCounter ++;    
   } else if(pet === 'no' || pet === 'n') {
     alert('Actually, Sharon has a Pit- Boston Mix named Piper.');
   } else {
@@ -66,6 +70,7 @@ function questionFour(){
   
   if(job === 'yes' || job === 'y' ) {
     alert('Your right! ' + userName);
+    guessCounter ++;    
   } else if(job === 'no' || job === 'n') {
     alert('Oops, she has a job.');
   } else {
@@ -78,11 +83,12 @@ function questionFour(){
 function questionFive(){
   var hobby = prompt('Does Sharon have a hobby?');
   hobby = hobby.toLowerCase();
-
+  
   if(hobby === 'yes' || hobby === 'y' ) {
     alert('uhhh, sorry!   ' + userName + ', Sharon has a spouse, a job, a pet and three kids... when would she have time for a hobby???');
   } else if (hobby === 'no' || hobby === 'n') {
     alert('yep- you guessed that one right, who has time for a hobby with a spouse, a job, a pet and three kids! ');
+    guessCounter ++;    
   } else {
     alert ('come on ' + userName + ', these are yes or no answers, try again');
   }
@@ -105,6 +111,7 @@ function questionSix(){
       moveGuess = prompt ('try again'); //tell user try again
     } else if (moveGuess == 32) {//guess it right
       alert('Nice job, you guessed it');//tell user correct
+      guessCounter ++;      
       break;
     }
     if (numGuess === 2 ) {
@@ -128,6 +135,7 @@ function questionSeven (){
       if (states === statesLivedIn[i]) {
         alert ('That is correct! I have lived in ' + statesLivedIn ); //valid answer with states listed
         correctAnswer = true;
+        guessCounter ++;      
         break;
       }
     }
@@ -144,6 +152,7 @@ function questionSeven (){
   };
 };
 
+var guessCounter = 0;
 function allQuestions(){
   questionOne();
   questionTwo();
@@ -152,6 +161,7 @@ function allQuestions(){
   questionFive();
   questionSix();
   questionSeven();
+  alert('Great job! You got ' + guessCounter + ' out of 7 questions right.');
 };
 
 allQuestions();
