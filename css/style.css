@@ -16,7 +16,9 @@ body {
   max-width: 48%;
   margin: auto;
 }
-li {list-style-type: disc;
+ul {list-style-type: disc; 
+} 
+ol {list-style-type: decimal;   
 }
 
 img {
