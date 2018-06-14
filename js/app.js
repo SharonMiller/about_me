@@ -13,15 +13,21 @@ Does Sharon have a hobby?  */
 
 // question 1 spouse
 function questionOne (){
-  var spouse = prompt('Does Sharon have a spouse?').toLowerCase();
-  if(spouse === 'yes' || spouse === 'y' ) {
-    alert('Yep, ' + userName + ' she is married to Steve Miller!');
-  } else if (spouse === 'no' || spouse === 'n'){
-    alert('Sorry, she\'s taken.');
-  } else {
-    alert ('come on ' + userName + ', these are yes or no answers, try again');
-  }
-  console.log('Does Sharon have a spouse? ' + spouse);
+  var husbandBool = true;
+  do{
+    var spouse = prompt('Does Sharon have a spouse?').toLowerCase();
+    if(spouse === 'yes' || spouse === 'y' ) {
+      alert('Yep, ' + userName + ' she is married to Steve Miller!');
+      husbandBool = false;
+    } else if (spouse === 'no' || spouse === 'n'){
+      alert('Sorry, she\'s taken.');
+      husbandBool = false;
+    } 
+    else {
+      alert ('come on ' + userName + ', these are yes or no answers, try again');
+    }
+    console.log('Does Sharon have a spouse? ' + spouse);
+  } while(husbandBool === true);
 };
 
 //question 2 kids
