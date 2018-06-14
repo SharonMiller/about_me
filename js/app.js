@@ -59,19 +59,22 @@ function questionThree (){
 
 questionThree();
 
-// //question 4 job
-// var job = prompt('Does Sharon have a job?');
-// job = job.toLowerCase();
+//question 4 job
+function questionFour(){
+  var job = prompt('Does Sharon have a job?');
+  job = job.toLowerCase();
+  
+  if(job === 'yes' || job === 'y' ) {
+    alert('Your right! ' + userName);
+  } else if(job === 'no' || job === 'n') {
+    alert('Oops, she has a job.');
+  } else {
+    alert ('come on ' + userName + ', these are yes or no answers, try again');
+  }
+  console.log('Does Sharon have a job? ' + job);
+};
 
-// if(job === 'yes' || job === 'y' ) {
-//   alert('Your right! ' + userName);
-// } else if(job === 'no' || job === 'n') {
-//   alert('Oops, she has a job.');
-// } else {
-//   alert ('come on ' + userName + ', these are yes or no answers, try again');
-// }
-// console.log('Does Sharon have a job? ' + job);
-
+questionFour();
 // //question 5 hobby
 // var hobby = prompt('Does Sharon have a hobby?');
 // hobby = hobby.toLowerCase();
