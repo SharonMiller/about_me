@@ -75,19 +75,24 @@ function questionFour(){
 };
 
 questionFour();
-// //question 5 hobby
-// var hobby = prompt('Does Sharon have a hobby?');
-// hobby = hobby.toLowerCase();
+//question 5 hobby
+function questionFive(){
+  var hobby = prompt('Does Sharon have a hobby?');
+  hobby = hobby.toLowerCase();
+  
+  if(hobby === 'yes' || hobby === 'y' ) {
+    alert('uhhh, sorry!   ' + userName + ', Sharon has a spouse, a job, a pet and three kids... when would she have time for a hobby???');
+  } else if (hobby === 'no' || hobby === 'n') {
+    alert('yep- you guessed that one right, who has time for a hobby with a spouse, a job, a pet and three kids! ');
+  } else {
+    alert ('come on ' + userName + ', these are yes or no answers, try again');
+  }
+  console.log('Does Sharon have a hobby? ' + hobby);
+};
 
-// if(hobby === 'yes' || hobby === 'y' ) {
-//   alert('uhhh, sorry!   ' + userName + ', Sharon has a spouse, a job, a pet and three kids... when would she have time for a hobby???');
-// } else if (hobby === 'no' || hobby === 'n') {
-//   alert('yep- you guessed that one right, who has time for a hobby with a spouse, a job, a pet and three kids! ');
-// } else {
-//   alert ('come on ' + userName + ', these are yes or no answers, try again');
-// }
-// console.log('Does Sharon have a hobby? ' + hobby);
-// // guess the number question- how many times have i moved? answer 32
+questionFive();
+
+// guess the number question- how many times have i moved? answer 32
 // var moveGuess = prompt('how many times have I moved');
 // var numGuess;
 
