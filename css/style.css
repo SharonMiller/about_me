@@ -1,6 +1,7 @@
 body {
   background-color: rgb(255, 255, 255);
   line-height: 1em;
+  padding: 10 px
 }
 
 h1 {
@@ -10,10 +11,9 @@ h1 {
   margin-top: 0.67em;
   margin-bottom: .67em;
 }
-
 body {
   color: grey;
-  max-width: 48%;
+  max-width: 900px;
   margin: auto;
 }
 ul {list-style-type: disc; 
@@ -26,7 +26,11 @@ img {
   height: 9em;
   background: #555;
   margin-top: 0.3em;
+  margin-right: .5em;
   margin-bottom: .5em;
-  margin-right: .67em;
+
+
+  /* //add bigger margins */
 }
 
+/* clear left will clear the empty space below if you put it on both sides it will restart the flow below it   */
