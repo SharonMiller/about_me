@@ -24,8 +24,7 @@ function questionOne (){
     } else if (spouse === 'no' || spouse === 'n'){
       alert('Sorry, she\'s taken.');
       husbandBool = false;
-    } 
-    else {
+    } else {
       alert ('come on ' + userName + ', these are yes or no answers, try again');
     }
     console.log('Does Sharon have a spouse? ' + spouse);
