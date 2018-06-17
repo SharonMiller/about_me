@@ -1,7 +1,32 @@
+
+.header{
+  padding: 20px;
+  max-width: 200px;
+  margin: auto;
+  background: transparent;
+  align-content: center;
+}
+/* top nav bar with links */
+.topnav{
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    background-color: #b9b9b9; 
+    text-align: center;
+}
+/* links change color when hovering */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(53, 51, 83);
+}
 body {
-  background-color: rgb(255, 255, 255);
+  background: #fff url(img/background.png);
+  color: #666;
   line-height: 1em;
-  padding: 10 px
+  padding: 10 px;
+  width: 960px; 
+  margin: auto;
 }
 
 h1 {
@@ -10,26 +35,51 @@ h1 {
   color: grey;
   margin-top: 0.67em;
   margin-bottom: .67em;
+  text-align: center;
 }
-body {
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em;
   color: grey;
-  max-width: 900px;
-  margin: auto;
+  margin-top: 0.67em;
+  margin-bottom: .67em;
+  text-align: center;
 }
+
 ul {list-style-type: disc; 
 } 
 ol {list-style-type: decimal;   
 }
+.text {
+  width: 100%;
+  border: 25px grey;
+  padding: 25px;
+  margin: 25px;
+}
 
-img {
+.topTen {
+  width: 100%;
+  border: 25px grey;
+  padding: 25px;
+  margin: 25px;
+}
+
+.skills {
+  width: 100%;
+  border: 25px grey;
+  padding: 25px;
+  margin: 25px;
+}
+
+.headshot {
   float: left;
-  height: 9em;
+  height: 2em;
   margin-top: 0.3em;
   margin-right: .5em;
   margin-bottom: .5em;
 
 
   /* //add bigger margins */
-}
 
 /* clear left will clear the empty space below if you put it on both sides it will restart the flow below it   */
