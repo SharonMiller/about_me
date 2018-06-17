@@ -18,6 +18,9 @@
     display: block;
     background-color: #b9b9b9; 
     text-align: center;
+    text-decoration-color: white;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* links change color when hovering */
 .topnav a:hover {
@@ -73,7 +76,7 @@ ol {list-style-type: decimal;
 .skills {
   background: white;
   float: left;
-  width: 600px;
+  width: 62%;
   padding: 25px;
   margin-top: 10px;
   
@@ -82,7 +85,7 @@ ol {list-style-type: decimal;
   background: #fff;
   line-height: 1em;
   float: right;
-  width: 250px;
+  width: 26%;
   padding: 25px;
   margin-top: 10px;
 }
